@@ -62,6 +62,7 @@
 			function home_btn_click()
 			{
 				console.log('Sending Click to GA');
+				ga('send', 'event', 'Child Frame', 'Button Click', 'Click Me');
 				console.log('Referrer:',document.referrer);
 			}
 		</script>
