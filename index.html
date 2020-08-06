@@ -62,7 +62,7 @@
 			function home_btn_click()
 			{
 				console.log('Sending Click to GA');
-				gtag('event', 'Button Click', {'event_category': 'Child Frame', 'event_label': 'Click Me'});
+				gtag('event', 'Button Click', {'event_category': 'Child Frame', 'event_label': document.referrer});
 				console.log('Referrer:',document.referrer);
 			}
 		</script>
